@@ -1,0 +1,452 @@
+@charset "utf-8";
+
+@media screen and (max-width:1635px) {
+    main .main_sec .container {
+        font-size: 6rem;
+    }
+    .profile .container .inner .content .info .left .info-group .yellow {
+        color: #FFB039;
+        width: 100px;
+    }
+    .profile .container .inner .content .info .info-group p {
+        font-size: 1.1rem;
+        padding-bottom: 15px;
+    }
+    .profile .container .inner .content .info .info-group li {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+    }  
+    .profile .inner .content .info .skill {
+        font-size: 1.1rem;
+    }
+    .profile .container .inner .content .info .info-group:nth-child(1), .profile .container .inner .content .info .info-group:nth-child(3) {
+        height: 110px;
+    }
+    .profile .container .inner .content .info .left {
+        margin-left: 1rem;
+    }
+    .redesign .container .inner .content {
+        width: 1100px;
+    }
+    /* ------ design ------ */
+/* 
+    .design .container .inner .content-wrap {
+        grid-gap: 10px;
+    }
+    .design .container .card .content-wrap .content {
+    width: 220px ; height: 220px;
+    }
+    .design .container .card .content-wrap .content .hover {
+        width: 220px ; height: 220px;
+    }
+    .design .container .card .content-wrap .content .hover a {
+        width: 220px ; height: 220px;
+        top: -220px; 
+    }
+    .design .container .card .content-wrap .content:nth-child(8) .img {
+        width: 220px ; height: 220px;
+    }
+    .design .page .content-wrap .content .img {  
+        width: 220px; height: 620px;
+    }
+    .design .page .content-wrap .content .hover {
+        width: 220px; height: 620px;
+    }
+    .design .page .content-wrap .content .hover .hover-inner {
+    width: 220px; height: 620px;
+    bottom: 620px;
+    } */
+}
+@media screen and (max-width:1540px) {
+    .profile .container .inner .content .info {
+        margin-top: 1.5rem;
+    }
+    /* ------ app ------ */
+    .app .container .inner .imgbox .img {
+        width: 250px; 
+        height: 500px;
+    }
+    .app .container .inner .txtwrap {
+        margin-left: 50px;
+    }
+    .app .container .inner .txtwrap .txtbox {
+        padding-top: 50px;
+    }
+    /* ------ redesign ------ */
+    .redesign .container .inner .content {
+        width: 1000px;
+    }
+    .redesign .container .inner .content img {
+        width: 650px;
+    }
+    .redesign .container .inner .content .txtbox {
+        width: 300px;
+    }
+    .redesign .container .inner .content .txtbox h2 {
+        font-size: 2.0rem;
+    }
+    .redesign .container .inner .content .btnwrap {
+        padding: 16px 10px;
+        width: 250px;
+    }
+    .redesign .container .inner .content .btnwrap a {
+        font-size: 1.1rem;
+        margin: 0 7px;
+    }
+}
+@media screen and (max-width:1450px) {
+    
+    header .leftbar ul li {
+        padding: 13px 0;
+    }
+    .leftbar ul li a {
+        font-size: 1.6rem;
+    }
+    .leftbar ul li a::after {
+    top: 21px;
+    }
+    .profile .container .inner .content .info {
+        margin-top: 4rem;
+    }
+    .redesign .container .inner .content {
+        width: 650px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        position: relative;
+    }
+    .redesign .container .inner .content:hover img {
+        /* border-radius:  0 0 30px 30px; */
+        border-radius:  0 0 30px 30px;
+
+    } 
+    .redesign .container .inner .content:nth-child(2) {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .redesign .container .inner .content:hover img {
+        border-radius:  30px 30px 0 0;
+    }
+    .redesign .container .inner .content:nth-child(2) img {
+        order: 0;
+    }
+    .redesign .container .inner .content:nth-child(2):hover img {
+        border-radius:  30px 30px 0 0;
+    }
+    .redesign .container .inner .content .txtbox {
+        width: 650px;  height: 260px;
+        padding: 0 10px;
+        border-radius: 0 0 30px 30px;
+        transform: translateY(-100%); 
+    }
+    .redesign .container .inner .content:nth-child(2) .txtbox {
+        transform: translateY(-100%);
+    }
+    .redesign .container .inner .content:nth-child(2):hover .txtbox {
+        border-radius: 0 0 30px 30px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .redesign .container .inner .content .txtbox h2 {
+        font-size: 2rem;
+        padding: 30px 0 20px 0;
+    }
+    .redesign .container .inner .content .txtbox p {
+        padding-top: 10px;
+    }
+    .redesign .container .inner .content .btnwrap {
+        width: 280px; height: 55px;
+        margin-top: 25px;
+        padding: 17px 20px;  
+    }
+    .redesign .container .inner .content .btnwrap a {
+        font-size: 1.3rem;
+    }
+    /* ------ app ------ */
+    .app .container .inner {
+        padding: 5rem 8rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .app .container .inner .imgbox {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .app .container .inner .txtwrap {
+        margin-left: 0;
+    }
+    .app .container .inner .txtwrap .txtbox {
+        padding-top: 80px;
+        text-align: center;
+        /* margin-left: 60px; */
+    }
+    /*  ----- banner ------ */
+    .design .container .inner {
+        padding: 0;
+    }
+    .design .container .inner .content-wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+@media screen and (max-width:1280px) {
+        header .leftbar {
+            padding: 300px 4rem;
+            width: 335px;
+        }
+        .leftbar ul li a {
+            font-size: 1.3rem;
+        }
+        main .main_sec .container {
+            font-size: 5rem;
+        }
+        .profile .container {
+            padding: 12rem 5rem 10rem 22rem;
+        }
+        .profile .container .inner .intro {
+            font-size: 1.8rem;
+        }
+        .profile .container .inner .content .info .info-group li {
+            font-size: 0.9rem;
+        }
+        .profile .inner .content .info .skill .img {
+            width: 35px; height: 35px;
+        }
+        .profile .inner .content .info .skill .skill-grid {
+            gap: 12px;
+        }
+        .coding .inner .swiper-wrapper .swiper-slide.swiper-slide-active img {
+            width: 500px;
+        }
+        .coding .inner .swiper-wrapper .swiper-slide.swiper-slide .text h2 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            width: 500px;
+        }
+        .redesign .container .inner .content {
+            width: 580px;
+        }
+        .redesign .container .inner .content img {
+            width: 580px;
+        }
+        .redesign .container .inner .content .btnwrap {
+            width: 250px; height: 48px;
+            margin-top: 25px;
+            padding: 17px 20px;   
+        }
+        .redesign .container .inner .content .btnwrap a {
+            font-size: 1rem;
+        }
+        /* .design .container .card .content-wrap .content {
+            width: 200px ; height: 200px;
+        }
+        .design .container .card .content-wrap .content .hover {
+            width: 200px ; height: 200px;
+        }
+        .design .container .card .content-wrap .content .hover a {
+            width: 200px ; height: 200px;
+            top: -200px; 
+        }
+        .design .container .card .content-wrap .content:nth-child(8) .img {
+            width: 200px ; height: 200px;
+        }
+        .design .page .content-wrap .content .img {  
+            width: 200px; height: 600px;
+        }
+        .design .page .content-wrap .content .hover {
+            width: 200px; height: 600px;
+        }
+        .design .page .content-wrap .content .hover .hover-inner {
+            width: 200px; height: 600px;
+            bottom: 600px;
+        } */
+        /*--------------- footer -------------- */
+        footer .container .inner .left {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        }
+        footer .container .inner .left .content p {
+            font-size: 1rem;
+        }
+        footer .container .inner .left .qrcode {
+        display: none;
+        }
+        footer .container .inner .left .box {
+            width: 95px; height: 95px;
+        }
+        footer .container .inner .left .resume a p {
+            font-size: 1rem;
+        }
+    }   
+@media screen and (max-width:1035px) {
+    .profile .container .inner .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile .container .inner .content .mainimg {
+        margin: 0 auto;
+    }
+    .profile .container .inner .content .info {
+        /* margin-top: 6rem; */
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .profile .container .inner .intro {
+        font-size: 1.5rem;
+    }
+    .profile .container .inner .content .mainimg {
+        width: 380px;
+        height: 480px;
+    }
+    .profile .container .inner .content .info .left {
+        width: 380px;
+    }
+    .profile .container .inner .content .info .right{
+        width: 380px;
+        margin: 0 auto;
+    }
+    .profile .container .inner .content .info .info-group p {
+        font-size: 1rem;
+    }
+    .profile .container .inner .content .info .info-group:nth-child(1), .profile .container .inner .content .info .info-group:nth-child(3) {
+        margin: 0 auto;
+    }
+    .coding .container {
+        padding: 20rem 4rem 10rem 22rem;
+    }
+    .redesign .container {
+        padding: 5rem 8rem 10rem 20rem;
+    }
+    .app .container {
+        padding: 10rem 8rem 4rem 20rem;
+    }
+    .app .container .inner .imgbox .img {
+        width: 180px; 
+        height: 430px;
+    }
+    .app .container .inner .txtwrap .txtbox {
+        padding-top: 20px;
+    }
+    .app .container .inner .txtwrap p {
+        padding-top: 10px;
+    }
+    .app .container .inner .btn {
+        padding-top: 45px;
+    }
+    .app .container .inner .btn .btnwrap {
+        width: 130px; height: 45px;
+        padding: 13px 10px;
+        border-radius: 30px;
+    }
+    .app .container .inner .btn .btnwrap a {
+        font-size: 1.2rem;
+    }
+    /* .design .container .card .content-wrap .content {
+        width: 180px ; height: 180px;
+    }
+    .design .container .card .content-wrap .content .hover {
+        width: 180px ; height: 180px;
+    }
+    .design .container .card .content-wrap .content .hover a {
+        width: 180px ; height: 180px;
+        top: -180px; 
+    }
+    .design .container .card .content-wrap .content:nth-child(8) .img {
+        width: 180px ; height: 180px;
+    }
+    .design .page .content-wrap .content .img {  
+        width: 180px; height: 580px;
+    }
+    .design .page .content-wrap .content .hover {
+        width: 180px; height: 580px;
+    }
+    .design .page .content-wrap .content .hover .hover-inner {
+        width: 180px; height: 580px;
+        bottom: 580px;
+    } */
+    footer .container .inner {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .container .inner .left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    footer .container .inner .logo {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:925px) {
+    header .logo a img {
+        width: 190px;
+    }
+    header .leftbar ul li {
+        padding: 10px 0;
+    }
+    .leftbar ul li a {
+        font-size: 1.2rem;
+    }
+    .leftbar ul li a:hover, .leftbar ul li a.on  {
+        padding-left: 20px;
+    }
+    .leftbar ul li a::after {
+        top: 19px;
+        width: 9px;
+        height: 9px;
+    }
+    .p-title{
+         display: block;
+    }
+    .title {
+        display: none;
+    }
+    .coding .container {
+        padding: 30rem 4rem 2rem 22rem;
+        margin-bottom: 15rem;
+    }
+    .coding .container .title {
+        display: none;
+    }
+    .redesign .container{
+        padding: 5rem 8rem 3rem 20rem;
+    }
+    .redesign .container .inner .content {
+        width: 500px;
+    }
+    .redesign .container .inner .content img {
+        width: 500px;
+    }
+    .app .container {
+        padding: 3rem 8rem 4rem 20rem;
+    }
+    .app .container .inner {
+        padding: 5rem 8rem 0 0;
+    }
+    /* .design .container .card .content-wrap .content {
+        width: 150px ; height: 150px;
+    }
+    .design .container .card .content-wrap .content .hover {
+        width: 150px ; height: 150px;
+    }
+    .design .container .card .content-wrap .content .hover a {
+        width: 150px ; height: 150px;
+        top: -150px; 
+    }
+    .design .container .card .content-wrap .content:nth-child(8) .img {
+        width: 150px ; height: 150px;
+    }
+    .design .page .content-wrap .content .img {  
+        width: 150px; height: 580px;
+    }
+    .design .page .content-wrap .content .hover {
+        width: 180px; height: 550px;
+    }
+    .design .page .content-wrap .content .hover .hover-inner {
+        width: 180px; height: 550px;
+        bottom: 550px;
+    } */
+}

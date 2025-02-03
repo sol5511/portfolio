@@ -31,23 +31,30 @@ a {
     color: inherit;
     text-decoration: none;
 }
+body {
+    height: auto;
+}
 /* -----------------header----------------- */
 header {
     background-color: black;
     color: white;
 }
+
 header .logo {
     position: fixed;
-    /* padding: 50px 90px; */
-    margin: 3rem 5rem;
-    width: 220px; height: 100px;
-    background: url(../images/logo.png) no-repeat center/contain;
+    width: 200px;
+    height: 100px;
+    margin: 5rem 5rem;
+    z-index: 10; 
 }
 header .logo a {
+    width: 100%; height: 100%;
     display: block;
-    background: url(../images/logo.png) no-repeat center/contain;
+    pointer-events: auto; 
 }
- 
+header .logo a img {
+    width: 250px; 
+}
 header .leftbar {
     position: fixed;
     z-index: 9;
@@ -175,9 +182,7 @@ main .main_sec .container{
 .main_sec .container h1:nth-child(9) {
     animation-delay: 3.2s;
 }
-/* .animate__bounceInDown {
-    animation-iteration-count: infinite;
-} */
+
 /* -----------------profile-------------- */
 .profile .container {
     width: 100%; height: 1000px;
@@ -187,6 +192,11 @@ main .main_sec .container{
 }
 .title {
     font-family: 'pre-black';
+}
+.p-title{
+    display: none;
+    font-family: 'pre-black';
+    font-size: 4.3rem;
 }
 .profile .container .inner {
     width: 100%;
@@ -209,7 +219,7 @@ main .main_sec .container{
     padding-top: 50px;
 }
 .profile .container .inner .content .mainimg {
-    width: 380px; height: 490px;
+    width: 330px; height: 440px;
     background: url(../images/hongmisol.jpg) no-repeat left/contain;
     transition: all .1s;
 }
@@ -217,15 +227,13 @@ main .main_sec .container{
     background: url(../images/hongmisol2.jpg) no-repeat left/contain;
 }
 .profile .container .inner .content .info {
-    width: 100%;
-    max-width: 950px;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
 .profile .container .inner .content .info .left {
     width: 480px;
 }
-
 .profile .container .inner .content .info .info-group {
     margin-bottom: 40px;
 }
@@ -260,14 +268,14 @@ main .main_sec .container{
     font-size: 1.6rem;
 }
 .profile .inner .content .info .skill .skill-grid {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 320px;
-    gap: 17px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);     grid-template-rows: repeat(2, auto); 
+    gap: 20px;
+    max-width: 250px; 
+    margin-top: 15px;
 }
 .profile .inner .content .info .skill .img {
-    width: 55px; height: 55px;
+    width: 48px; height: 48px;
 }
 .profile .inner .content .info .skill .img:nth-child(1) {
     background: url(../images/photoshop.png)no-repeat center/contain;
@@ -327,7 +335,6 @@ main .main_sec .container{
     opacity: 0.5;
     transform: scale(0.8); 
 }
-
 .coding .inner .swiper-wrapper .swiper-slide img {
     width: 300px;
     transition: transform 0.3s ease;
@@ -346,11 +353,14 @@ main .main_sec .container{
     opacity: 1;
     visibility: visible;
     transform: scale(1); 
+    z-index: 999;
+    position: relative;
 }
 
 .coding .inner .swiper-wrapper .swiper-slide.swiper-slide-active img {
-    /* transform: scale(2); */
     width: 600px;
+    position: relative;
+    z-index: 99;
 }
 .coding .inner .swiper-wrapper .swiper-slide.swiper-slide .text h2 {
     font-family: 'waguri';
@@ -358,6 +368,7 @@ main .main_sec .container{
     font-weight: 500;
     padding-bottom: 13px;
     transition: all .2s;
+    width: 500px;
 }
 .coding .inner .swiper-wrapper .swiper-slide.swiper-slide:hover .text h2 {
     color: #0ECB7B;
@@ -371,8 +382,13 @@ main .main_sec .container{
     visibility: visible;
     padding-top: 40px;
     text-align: center;
+    position: relative;
+    z-index: 999;
 }
-
+.coding .inner .swiper-wrapper .swiper-slide img {
+    position: relative;
+    z-index: 9;
+}
 .coding .inner .swiper-wrapper .swiper-slide.swiper-slide .btn {
     margin-top: 35px;
 }
@@ -460,7 +476,6 @@ main .main_sec .container{
     order: 2;
     border-radius: 30px;
 }
-
 .redesign .container .inner .content:hover img {
     border-radius: 30px 0 0 30px;
 }
@@ -557,6 +572,7 @@ main .main_sec .container{
 .app .container .inner .imgbox {
     display: flex;
     gap: 20px;
+    width: 500px;
 }
 
 .app .container .inner .imgbox .img {
@@ -579,6 +595,7 @@ main .main_sec .container{
 .app .container .inner .txtwrap .txtbox {
     padding-top: 80px;
     display: none;
+    width: 500px;
     /* opacity: 0; */
 }
 .app .container .inner .txtwrap .txtbox.on {
@@ -630,7 +647,6 @@ main .main_sec .container{
     background: url(../images/clover.png) no-repeat center/contain;
     width: 100px; height: 100px;
     animation: clover 10s linear infinite;
-    overflow: hidden;
     margin-top: 7rem;
     overflow: hidden;
 }
@@ -645,12 +661,12 @@ main .main_sec .container{
 
 /* --------------design works------------- */
 .design .container {
-    width: 100%;
-    padding: 0rem 9rem 0rem 27rem;
-    /* margin: 5rem 0; */
+    width: 95%;
+    /* padding: 0rem 9rem 0rem 27rem; */
+    margin-left: auto;
 }
 .design .container .inner {
-    padding: 7rem 5rem 3rem 3rem ;
+    /* padding: 7rem 5rem 3rem 3rem ; */
     position: relative;
 }
 .design .container .inner .title {
@@ -660,7 +676,7 @@ main .main_sec .container{
     padding-bottom: 2.5rem;
 }
 .design .container .inner .content-wrap {
-    width: 1060px;
+    max-width: 1060px;
     display: grid; 
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
@@ -671,7 +687,7 @@ main .main_sec .container{
     z-index: 9;
 }
 .design .container .card .content-wrap .content {
-    width: 250px ; height: 250px;
+    width: 250px; height: 250px;
     overflow: hidden;
 }
 .design .container .content-wrap .content .img {
@@ -682,6 +698,7 @@ main .main_sec .container{
     align-items: center;
     background-color: #fff;
 }
+
 .design .container .card .content-wrap .content:nth-child(1) .img {
     background: url(../images/card-banner1.jpg) no-repeat center/contain;
 }
@@ -771,9 +788,12 @@ main .main_sec .container{
     cursor: pointer;
 }
 /*------------ page------------  */
-
-.design .page .content-wrap .content .img {   width: 100%; height: 650px;
-
+.design .page .content-wrap .content {
+    width: 250px; height: 650px;
+    overflow: hidden;
+}
+.design .page .content-wrap .content .img {  
+    width: 100%; height: 100%;
 }
 .design .page .content-wrap .content:nth-child(1) .img {
     background: url(../images/page1.jpg) no-repeat top/cover;
@@ -828,9 +848,6 @@ main .main_sec .container{
     display: block;
 }
 
-/* 상세페이지 팝업추가하기 💥💥💥💥💥 */
-
-
 main .container .icon {
     position: relative;
 }
@@ -854,7 +871,7 @@ footer {
     width: 100%;
 }
 footer .container {
-    padding: 5rem 15rem 5rem 16rem ;
+    padding: 5rem 9rem 5rem 16rem ;
 }
 footer .container .title {
     font-family: 'waguri';
@@ -921,6 +938,6 @@ footer .container .inner .left .resume .box a .arrow {
  }
  footer .container .inner .logo {
     /* width: 250px; height: 140px; */
-    width: 500px; height: 150px;
-    background: url(../images/flogo3.png) no-repeat right/contain;
+    width: 300px; height: 120px;
+    background: url(../images/flogo2.png) no-repeat right/contain;
  }

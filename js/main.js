@@ -56,6 +56,17 @@ $(function(){
         scrollTop : 0
     },200)
     
+//leftbar - 숨기기
+$(window).scroll(function(){
+    let scrollTop = $(window).scrollTop()
+    if (scrollTop >= 1100 && scrollTop <= 6850) {
+        $('.leftbar').show(); 
+    } else {
+        $('.leftbar').hide(); 
+    }
+    console.log($(window).scrollTop())
+});
+
 //app design 클릭하면 txtbox 보이기
 
     $('.imgbox .img').click(function () {
