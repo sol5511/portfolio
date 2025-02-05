@@ -10,6 +10,7 @@ const swiper1 = new Swiper('.Swiper1', {
 const navLinks = document.querySelectorAll('.leftbar ul li a');
 const sections = document.querySelectorAll('main .section');
 const mainSec = document.querySelector('main .main_sec');
+// 네비게이션(사이드바) 메뉴 요소들을 가져옴, 페이지 내 각 섹션 요소들을 가져옴,메인 섹션(첫 화면)을 가져옴
 
 navLinks.forEach((link) => {
     link.addEventListener('click', function (e) {
@@ -22,6 +23,7 @@ navLinks.forEach((link) => {
             window.scrollTo({
                 top: targetSection.offsetTop + 80,
                 behavior: 'smooth',
+                // offsetTop + 80 → 조금 더 아래로 스크롤 (헤더 같은 요소를 고려한 여백 조정)
             });
         }
     });
@@ -37,6 +39,7 @@ window.addEventListener('scroll', () => {
             navLinks.forEach((link) => link.classList.remove('on'));
             return;
         }
+        // 네비게이션 버튼 클릭 시 해당 섹션으로 스크롤 이동 ,  클릭한 네비게이션 항목에 on 클래스를 추가하여 스타일 변경,  스크롤 시 현재 위치한 섹션에 따라 네비게이션 on 클래스 변경,  메인 섹션(.main_sec)에 있을 때는 네비게이션 스타일 제거 (비활성화 효과)
     }
 
     sections.forEach((section, index) => {
@@ -78,7 +81,7 @@ $(window).scroll(function(){
 
 //design works popup 
 $('.card .content').click(function(e){
-    let arr = ['../images/card-banner1.jpg', '../images/card-banner2.jpg','../images/card-banner3.jpg','../images/card-banner4.jpg','../images/card-banner5.jpg','../images/card-banner6.png','../images/card-banner7.jpg', '']
+    let arr = ['/images/card-banner1.jpg', '/images/card-banner2.jpg','/images/card-banner3.jpg','/images/card-banner4.jpg','/images/card-banner5.jpg','/images/card-banner6.png','/images/card-banner7.jpg', '']
     e.preventDefault()
     let idx = $(this).index()
     console.log(idx)

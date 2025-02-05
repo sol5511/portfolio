@@ -358,7 +358,7 @@ main .main_sec .container{
 }
 
 .coding .inner .swiper-wrapper .swiper-slide.swiper-slide-active img {
-    width: 600px;
+    width: 700px;
     position: relative;
     z-index: 99;
 }
