@@ -81,7 +81,7 @@ $(window).scroll(function(){
 
 //design works popup 
 $('.card .content').click(function(e){
-    let arr = ['/images/card-banner1.jpg', '/images/card-banner2.jpg','/images/card-banner3.jpg','/images/card-banner4.jpg','/images/card-banner5.jpg','/images/card-banner6.png','/images/card-banner7.jpg', '']
+    let arr = ['images/card-banner1.jpg', 'images/card-banner2.jpg','images/card-banner3.jpg','images/card-banner4.jpg','images/card-banner5.jpg','images/card-banner6.png','images/card-banner7.jpg', '']
     e.preventDefault()
     let idx = $(this).index()
     console.log(idx)
