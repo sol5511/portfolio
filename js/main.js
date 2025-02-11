@@ -5,6 +5,15 @@ const swiper1 = new Swiper('.Swiper1', {
     grabCursor: true, 
 });
 
+var swiper = new Swiper(".mobile-Swiper", {
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    loop: true, 
+
+});
+
 
 // leftbar
 const navLinks = document.querySelectorAll('.leftbar ul li a');
@@ -28,6 +37,23 @@ navLinks.forEach((link) => {
         }
     });
 });
+// m-nav 
+document.querySelectorAll('.m-nav ul li a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href'); // 클릭한 a 태그의 href 값 가져오기
+        const targetElement = document.querySelector(targetId); // 해당 id의 요소 선택
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth', 
+                block: 'start'
+            });
+        }
+    });
+});
+
 
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
@@ -58,7 +84,16 @@ $(function(){
     $('html,body').animate({
         scrollTop : 0
     },200)
-    
+
+// hamburger
+$(document).ready(function(){
+    $('.hamburger').click(function(){
+        $('.m-nav').toggleClass('on'); 
+    });
+    $('.hamburger').click(function(){
+        $('.m-nav').stop().slideToggle(800); 
+    });
+});
 //leftbar - 숨기기
 $(window).scroll(function(){
     let scrollTop = $(window).scrollTop()
@@ -94,9 +129,6 @@ $('.card .content').click(function(e){
     $('.popup button').click(function(){
         $('.popup').hide()
     })
-
-
-
 
 
 });
